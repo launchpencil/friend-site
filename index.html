@@ -7,13 +7,17 @@
 <body>
   <script>
     function projectsekai() {
-      confirm('Safariで開きますか。');
+      if (confirm('新しいタブを開きますか。')) {
+        open('');
+      } else {
+        alert("開きませんでした。");
+      }
     }
   </script>
 
   <h1>welcome to this  home page</h1>
   <p>ニャオハ立つな</p>
-  <a href="about.html">自己紹介</a>
+  <a href="about.html">自己紹介</a>.                 
   <a href="http://google.com">リンク</a>
   <a onclick="projectsekai();">さいきょうのエースバーン</a>
 </body>
